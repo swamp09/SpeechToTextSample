@@ -21,8 +21,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.voiceBtn.setOnClickListener {
             binding.textTv.text = "wait..."
-            Toast.makeText(this, "test", Toast.LENGTH_SHORT).show()
             speck();
+        }
+        binding.button.setOnClickListener {
+            val intent = Intent(this, SubActivity::class.java)
+            startActivity(intent)
         }
     }
 

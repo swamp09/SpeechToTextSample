@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".SubActivity">
 
     <TextView
-        android:id="@+id/textTv"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press mic button to input voice"
-        android:textColor="#E44B4B"
-        android:textSize="20sp" />
+        android:text="SubActivity"
+    />
+
     <ImageButton
         android:id="@+id/voiceBtn"
         android:background="@null"
@@ -21,9 +21,20 @@
         android:scaleType="fitCenter"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-    />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="137dp"
+        android:background="@null"
+        android:text="stop" />
 
     <Button
         android:id="@+id/button"
@@ -31,6 +42,5 @@
         android:layout_height="120dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="591dp"
-        android:text="画面遷移" />
-
+        android:text="戻る" />
 </RelativeLayout>
